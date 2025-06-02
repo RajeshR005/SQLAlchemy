@@ -92,7 +92,6 @@ python loading-techniques.py # Loading strategies: lazy, joinedload, etc.
 ## 🧑‍💻 Author
 
 **Rajesh R**   
-📫 [GitHub](https://github.com/RajeshR005)
 [![Gmail](https://img.shields.io/badge/Gmail-rajeshr005%40gmail.com-red?logo=gmail&logoColor=white)](mailto:rajeshr30072002@gmail.com) 
 
 ---
