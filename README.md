@@ -89,20 +89,11 @@ python self-relation.py      # Self-referencing relation
 python loading-techniques.py # Loading strategies: lazy, joinedload, etc.
 ```
 
----
-
-## ✨ Visual Learning
-
-![Entity Relationship Animation](https://raw.githubusercontent.com/RajeshR005/SQLAlchemy/main/assets/er_animation.gif)
-
-Enjoy animated visualizations and ER diagrams inside the `assets/` folder to better understand relationships and query flows.
-
----
-
 ## 🧑‍💻 Author
 
 **Rajesh R**   
 📫 [GitHub](https://github.com/RajeshR005)
+[![Gmail](https://img.shields.io/badge/Gmail-rajeshr005%40gmail.com-red?logo=gmail&logoColor=white)](mailto:rajeshr30072002@gmail.com) 
 
 ---
 
