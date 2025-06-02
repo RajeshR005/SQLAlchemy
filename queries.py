@@ -39,7 +39,7 @@ for i in f_name:
 
 f_name=session.query(Staffs).filter(and_(Staffs.name=='Azula',Staffs.age==21)).all()
 f_name_1=session.query(Staffs).filter(and_(Staffs.name=='Azula',Staffs.age==21))
-print(f"The total number of staffs: {len(f_name_1)}")
+print(f"The total number of staffs: {(f_name_1)}")
 for i in f_name_1:
     
     print(f"Name: {i.name} Age: {i.age}")

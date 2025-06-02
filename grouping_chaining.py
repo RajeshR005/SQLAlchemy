@@ -14,7 +14,7 @@ for age,name,count in users:
 users = session.query(Staffs.name,func.count(Staffs.id)).group_by(Staffs.name).all()
 
 for name,count in users:
-    print(f"Name: {name} Count: {count}")
+    print(f"Name: {name} Count: {count}")   
 
 #Chaining
 users = session.query(Staffs.age,Staffs.name,func.count(Staffs.id)).filter(Staffs.age>=25,Staffs.age<=45).group_by(Staffs.name,Staffs.age).order_by(Staffs.name).all()

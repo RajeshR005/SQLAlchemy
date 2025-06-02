@@ -15,19 +15,6 @@ users=session.query(Daily_attendance.employee_id,func.count(Daily_attendance.emp
 
 for employee_id,present in users:
     print(f"Employee ID: {employee_id} Count of present: {present} ")
-
-users=session.query(Daily_attendance.employee_id,func.count(Daily_attendance.attendance_status==1)).group_by(Daily_attendance.employee_id).all()
-
-for employee_id,present in users:
-    print(f"Employee ID: {employee_id} Count of present: {present} ")
-
-users=session.query(Employee).filter(Employee.door_location,Employee.access_time).all()
-
-for i in users:
-    print(f"Employee ID {i.employee_id} Access_time: {i.access_time} Access_location: {i.door_location} ")
-
-
-
 users = session.query(Daily_attendance.employee_id,func.sum(case((Daily_attendance.attendance_status == 1, 1), else_=0)),func.sum(case((Daily_attendance.attendance_status == 3, 1), else_=0)),func.sum(case((Daily_attendance.attendance_status==2, 1),else_=0))).group_by(Daily_attendance.employee_id).all()
 
 for employee_id, present, absent, holidays in users:

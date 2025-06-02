@@ -15,10 +15,9 @@ def insert():
     address1=input("Address: ").capitalize()
     dateofjoin_in=input("Enter your Date of Join: (YYYY-MM-DD): ")
     dateofjoin1 = datetime.strptime(dateofjoin_in, "%Y-%m-%d").date()
-    status1=int(input("Enter your Status (1,0): "))
     users=session.query(People).filter(People.email==email1).first()
     if not users:
-        users=People(name=name1,gender=gender1,department=department1,email=email1,phone=phone1,address=address1,dateofjoin=dateofjoin1,status=status1)
+        users=People(name=name1,gender=gender1,department=department1,email=email1,phone=phone1,address=address1,dateofjoin=dateofjoin1,status=1)
         session.add(users)
         session.commit()
         print(f"{name1} Data Inserted Sucessfully")

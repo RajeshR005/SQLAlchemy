@@ -6,7 +6,7 @@ session=Session()
 
 users=session.query(Student).filter(Student.id==1).one_or_none()
 print(users.name)
-users.name="Prince Zuko"
+users.name="Prince Rajesh"
 print(users.name)
 session.commit()
 

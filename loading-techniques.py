@@ -35,7 +35,7 @@ class Courses(Base):
     staff=Column(String(50))
     student_course=relationship("Stu_course",back_populates="course", lazy = "joined")
 
-#lazy = Default
+# lazy = Default
 users=session.query(Stu_course).all()
 for i in users:
     

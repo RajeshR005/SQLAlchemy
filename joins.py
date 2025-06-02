@@ -44,7 +44,7 @@ for i in users:
     for j in i.student_course:
         print(f"Courses {j.course.subj}")
 
-#here it only works with the relationships
+# #here it only works with the relationships
 users=session.query(Students).all()
 for i in users:
     print(f"Name: {i.name}")
@@ -74,8 +74,6 @@ right=session.query(Students,Courses).outerjoin(Stu_course,Stu_course.course_id=
 users=left.union(right)
 for student1,course1 in users.all():
     print(student1.name if student1 else 'none')
-    print(course1.subj if course1 else 'none')
-    
-    
+    print(course1.subj if course1 else 'none')    
     
     

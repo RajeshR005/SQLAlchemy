@@ -15,7 +15,7 @@ for i in users:
     print(f"ID: {i.id} Name: {i.name} Age: {i.age}")
 
 
-#Here we use the order by to get the data in ascending order and descending order
+# Here we use the order by to get the data in ascending order and descending order
 
 from sqlalchemy.orm import sessionmaker
 from models import Student,engine
