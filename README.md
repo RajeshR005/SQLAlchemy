@@ -92,7 +92,7 @@ python loading-techniques.py # Loading strategies: lazy, joinedload, etc.
 ## 🧑‍💻 Author
 
 **Rajesh R**   
-[![Gmail](https://img.shields.io/badge/Gmail-rajeshr005%40gmail.com-red?logo=gmail&logoColor=white)](mailto:rajeshr30072002@gmail.com) 
+[![Gmail](https://img.shields.io/badge/Gmail-rajeshr30072002%40gmail.com-red?logo=gmail&logoColor=white)](mailto:rajeshr30072002@gmail.com) 
 
 ---
 
